@@ -1,0 +1,17 @@
+.btn {
+    display: flex;
+    background-color: #E01F3D;
+    width: 163px;
+    height: 54px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 100px;
+
+    &:hover {
+        background-color: #CA1B36;
+    }
+}
