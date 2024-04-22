@@ -1,8 +1,21 @@
+.benefits-section {
+    position: relative;
+
+    &::before {
+        content: "";
+    position: absolute;
+    border: 17px solid transparent;
+    border-left: 34px solid #E01F3D;
+    bottom: -24px;
+    transform: rotate(140deg);
+    }
+}
+
 .benefits {
     display: flex;
 }
 
-.benfits__item {
+.benefits__item {
     flex: 1;
     margin: 0 3%;
     position: relative;
@@ -11,7 +24,7 @@
         content: url('../../img/icons/benefot-sep.png');
         position: absolute;
         top: 30px;
-        right: 0;
+        right: -61px;
     }
 
     &:first-child {
@@ -20,5 +33,10 @@
 
     &:last-child {
         margin-right: 0;
+
+        &::before {
+            display: none;
+        }
+
     }
 }
