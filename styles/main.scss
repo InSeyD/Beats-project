@@ -5,6 +5,9 @@ $baseFontSize: 16px;
 $gray: #F8FAF9;
 $black: #292929;
 
+//z-index
+$z-fixed-menu: 100;
+
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs.normalize/8.0.1/normalize.css");
 
@@ -27,3 +30,4 @@ $black: #292929;
 @import './components/interactive-avatar';
 @import './components/form';
 @import './components/radio';
+@import './components/fixed-menu';
