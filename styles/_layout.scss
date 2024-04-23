@@ -17,14 +17,15 @@ body {
 .wpapper {
     position: relative;
     width: 100%;
-    min-width: $containerWidth + 20px;
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
+    position: relative;
 }
 
 h1,

@@ -4,9 +4,9 @@
     &::before {
         content: "";
     position: absolute;
-    border: 17px solid transparent;
-    border-left: 34px solid #E01F3D;
-    bottom: -24px;
+    border: 1.0625rem solid transparent;
+    border-left: 2.125rem solid #E01F3D;
+    bottom: -1.5rem;
     transform: rotate(140deg);
     }
 }
@@ -23,8 +23,8 @@
     &::before {
         content: url('../../img/icons/benefot-sep.png');
         position: absolute;
-        top: 30px;
-        right: -61px;
+        top: 1.875rem;
+        right: -3.8125rem;
     }
 
     &:first-child {
