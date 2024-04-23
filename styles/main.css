@@ -1,13 +1,16 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs.normalize/8.0.1/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Play:wght@400;700&display=swap");
+html {
+  font-size: 16px;
+}
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  font-size: 16px;
   font-family: "Play", "Alegreya Sans", sans-serif;
   line-height: 18.51px;
   -webkit-font-smoothing: antialiased;
@@ -78,16 +81,16 @@ img {
 .hero {
   background-color: #F5F5F5;
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
   color: #292929;
 }
 .hero::after {
   content: "";
-  right: 68px;
+  right: 4.25rem;
   position: absolute;
   transform: rotate(-45deg);
-  width: 46px;
-  height: 10px;
+  width: 2.875rem;
+  height: 0.625rem;
   background-color: #C4C4C4;
 }
 
@@ -96,16 +99,16 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 65px;
+  padding: 1.5rem 0 4.0625rem;
   background: url("../../img/hero-bg.png") right center/50% auto no-repeat;
 }
 
 .hero__main-title {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 52px;
   text-align: left;
-  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
   text-transform: uppercase;
   width: 36%;
 }
@@ -116,7 +119,7 @@ img {
   font-weight: 400;
   line-height: 25.2px;
   text-align: left;
-  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
   width: 35%;
 }
 
@@ -129,14 +132,14 @@ img {
 .menu__list {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Alegreya Sans";
-  width: 639px;
+  width: 39.9375rem;
   justify-content: space-between;
 }
 
 .menu__item {
-  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -154,9 +157,9 @@ img {
 }
 
 .phone-number__icon-elem {
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.375rem;
 }
 
 .features {
@@ -164,7 +167,7 @@ img {
 }
 
 .features__item {
-  margin-right: 46px;
+  margin-right: 2.875rem;
 }
 .features__item:last-child {
   margin-right: 0;
@@ -175,19 +178,19 @@ img {
 }
 
 .feature__icon {
-  width: 41px;
-  margin-right: 11px;
+  width: 2.5625rem;
+  margin-right: 0.6875rem;
 }
 
 .feature__text {
-  max-width: 89px;
+  max-width: 5.5625rem;
 }
 
 .btn {
   display: flex;
   background-color: #E01F3D;
-  width: 163px;
-  height: 54px;
+  width: 10.1875rem;
+  height: 3.375rem;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -223,7 +226,7 @@ img {
   line-height: 52px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
   z-index: 1;
   color: #292929;
   position: relative;
@@ -236,14 +239,14 @@ img {
 }
 
 .headline__title {
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
   color: #292929;
 }
 
 .headline__subtitle {
   padding: 0 21%;
   text-align: center;
-  margin-bottom: 62px;
+  margin-bottom: 3.875rem;
 }
 
 .benefits-section {
@@ -252,9 +255,9 @@ img {
 .benefits-section::before {
   content: "";
   position: absolute;
-  border: 17px solid transparent;
-  border-left: 34px solid #E01F3D;
-  bottom: -24px;
+  border: 1.0625rem solid transparent;
+  border-left: 2.125rem solid #E01F3D;
+  bottom: -1.5rem;
   transform: rotate(140deg);
 }
 
@@ -270,8 +273,8 @@ img {
 .benefits__item::before {
   content: url("../../img/icons/benefot-sep.png");
   position: absolute;
-  top: 30px;
-  right: -61px;
+  top: 1.875rem;
+  right: -3.8125rem;
 }
 .benefits__item:first-child {
   margin-left: 0;
@@ -289,18 +292,18 @@ img {
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: 8rem;
+  height: 8rem;
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .benefit__icon {
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -316,37 +319,37 @@ img {
 }
 
 .benefit__desc {
-  padding: 0 9px;
+  padding: 0 0.5625rem;
 }
 
 .reviews-section {
   position: relative;
 }
 .reviews-section::before {
-  bottom: -20px;
+  bottom: -1.25rem;
   position: absolute;
   content: "";
-  width: 35px;
-  height: 35px;
+  width: 2.1875rem;
+  height: 2.1875rem;
   border-radius: 50%;
-  left: 34px;
+  left: 2.125rem;
   background: #868686;
 }
 
 .reviews__display {
   background: #F8FAF9;
-  padding: 42px;
+  padding: 2.625rem;
   position: relative;
 }
 .reviews__display::before {
   position: absolute;
   content: "";
-  width: 83px;
-  height: 83px;
+  width: 5.1875rem;
+  height: 5.1875rem;
   background: white;
   left: 46%;
   border-radius: 50%;
-  top: -56px;
+  top: -3.5rem;
 }
 
 .reviews__display-inner {
@@ -354,8 +357,8 @@ img {
 }
 
 .reviews__avatar {
-  width: 253px;
-  height: 264px;
+  width: 15.8125rem;
+  height: 16.5rem;
 }
 
 .reviews__avatar-img {
@@ -367,7 +370,7 @@ img {
 
 .reviews__content {
   flex: 1;
-  margin-left: 40px;
+  margin-left: 2.5rem;
 }
 
 .reviews__title {
@@ -376,13 +379,13 @@ img {
   line-height: 27.77px;
   text-align: left;
   color: #292929;
-  margin-bottom: 27px;
+  margin-bottom: 1.6875rem;
 }
 
 .reviews__text {
   color: #666666;
-  margin-bottom: 38px;
-  padding-right: 108px;
+  margin-bottom: 2.375rem;
+  padding-right: 6.75rem;
 }
 
 .reviews__author {
@@ -396,12 +399,12 @@ img {
 .reviews__switcher {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 .interactive-avatar {
-  width: 74px;
-  height: 74px;
+  width: 4.625rem;
+  height: 4.625rem;
   border: 4px solid transparent;
   border-radius: 50%;
   overflow: hidden;
@@ -463,18 +466,18 @@ img {
 }
 
 .form__title {
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 .form__input {
   width: 100%;
-  padding: 18px 12px;
+  padding: 1.125rem 0.75rem;
   border: solid 3px transparent;
 }
 .form__input--textarea {
-  height: 152px;
+  height: 9.5rem;
   resize: none;
-  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
 }
 .form__input:focus {
   border-color: #E01F3D;
@@ -488,7 +491,7 @@ img {
 
 .form__btns {
   display: flex;
-  margin-top: 44px;
+  margin-top: 2.75rem;
 }
 
 .radio {
@@ -498,10 +501,10 @@ img {
      -moz-user-select: none;
           user-select: none;
   align-items: center;
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 .radio--checkbox {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -518,8 +521,8 @@ img {
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   position: relative;
   border-radius: 50%;
   background: #FFFFFF;
@@ -528,8 +531,8 @@ img {
 .radio__visible::before {
   content: "";
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 0.875rem;
+  height: 0.875rem;
   background: #E01F3D;
   border-radius: 50%;
   display: none;
@@ -546,7 +549,7 @@ img {
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #E01F3D;
@@ -556,8 +559,8 @@ img {
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   border: 1px solid transparent;
   display: block;
@@ -567,8 +570,8 @@ img {
   content: "";
   position: absolute;
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 0.375rem;
+  height: 0.375rem;
   border-radius: 50%;
   background: #292929;
   top: 50%;
