@@ -198,6 +198,15 @@ img {
 .btn:hover {
   background-color: #CA1B36;
 }
+.btn--transparent {
+  background: transparent;
+  text-transform: none;
+  border: transparent;
+}
+.btn--transparent:hover {
+  color: #E01F3D;
+  background: transparent;
+}
 
 .section {
   height: 100vh;
@@ -416,4 +425,114 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.order-section {
+  background: url(../../img/order-bg.png) center center no-repeat;
+  color: #FFFFFF;
+}
+.order-section__title {
+  color: #FFFFFF;
+  margin-bottom: 47px;
+}
+
+.form {
+  display: flex;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 26px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+
+.form__row {
+  display: flex;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 14px;
+  margin-top: 14px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__title {
+  margin-bottom: 6px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 18px 12px;
+  border: solid 3px transparent;
+}
+.form__input--textarea {
+  height: 152px;
+  resize: none;
+  margin-bottom: 36px;
+}
+.form__input:focus {
+  border-color: #E01F3D;
+  outline: none;
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__btns {
+  display: flex;
+  margin-top: 44px;
+}
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  align-items: center;
+  margin-right: 24px;
+}
+.radio--checkbox {
+  margin-top: 16px;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 0;
+}
+.radio--checkbox .radio__visible::before {
+  background: url("../../img/icons/order-checkbox.svg") center center no-repeat;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: #FFFFFF;
+  margin-right: 10px;
+}
+.radio__visible::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #E01F3D;
+  border-radius: 50%;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=main.css.map */

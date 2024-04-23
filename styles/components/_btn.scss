@@ -14,4 +14,15 @@
     &:hover {
         background-color: #CA1B36;
     }
+
+    &--transparent {
+        background: transparent;
+        text-transform: none;
+        border: transparent;
+
+        &:hover {
+            color: #E01F3D;
+            background: transparent;
+        }
+    }
 }
