@@ -15,6 +15,30 @@
     }
 }
 
+.hero__title-section {
+
+    width: 46%;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        &::before {
+            content: url('../../img/hero-bg.png');
+        }
+    }
+}
+
+.hero__icons-section {
+    @include tablets {
+        display: none;
+    }
+}
 
 .hero__container {
     display: flex;
@@ -23,16 +47,18 @@
     height: 100%;
     padding: 1.5rem 0 4.0625rem;
     background: url("../../img/hero-bg.png") right center / 50% auto no-repeat;
+
+    @include tablets {
+        background: none;
+    }
 }
 
 .hero__main-title {
     font-size: 3rem;
     font-weight: 700;
     line-height: 52px;
-    text-align: left;
     margin-bottom: 1.375rem;
     text-transform: uppercase;
-    width: 36%;
 }
 
 .hero__title-desc {
@@ -40,7 +66,9 @@
     font-size: 21px;
     font-weight: 400;
     line-height: 25.2px;
-    text-align: left;
     margin-bottom: 2.25rem;
-    width: 35%;
+
+    @include tablets {
+        padding: 0 25%;
+    }
 }
