@@ -13,6 +13,10 @@
 
 .benefits {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .benefits__item {
@@ -20,6 +24,11 @@
     margin: 0 3%;
     position: relative;
 
+    @include phones {
+        display: flex;
+        margin: 0 0 31px 0;
+        align-items: center;
+    }
 
     &::before {
         content: url('../../img/icons/benefot-sep.png');

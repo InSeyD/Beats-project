@@ -3,16 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Play:wght@400;700&display=swap");
 html {
   font-size: 16px;
-}
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 16px -1px;
+  /*@include tablets {
+      font-size: $baseFontSize - 1px;
   }
-}
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 16px -2px;
-  }
+
+  @include phones {
+      font-size: $baseFontSize - 2px;
+  }*/
 }
 
 html,
@@ -153,10 +150,16 @@ img {
   margin-bottom: 1.375rem;
   text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+  .hero__main-title {
+    font-size: 32px;
+    padding: 0 4%;
+  }
+}
 
 .hero__title-desc {
   font-family: "Alegreya Sans";
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 400;
   line-height: 25.2px;
   margin-bottom: 2.25rem;
@@ -164,6 +167,11 @@ img {
 @media screen and (max-width: 768px) {
   .hero__title-desc {
     padding: 0 25%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title-desc {
+    padding: 0 9%;
   }
 }
 
@@ -283,15 +291,20 @@ img {
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 3.25rem;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1.125rem;
   z-index: 1;
   color: #292929;
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 32px;
+  }
 }
 
 .headline {
@@ -310,6 +323,11 @@ img {
   text-align: center;
   margin-bottom: 3.875rem;
 }
+@media screen and (max-width: 480px) {
+  .headline__subtitle {
+    padding: 0;
+  }
+}
 
 .benefits-section {
   position: relative;
@@ -326,11 +344,23 @@ img {
 .benefits {
   display: flex;
 }
+@media screen and (max-width: 480px) {
+  .benefits {
+    flex-direction: column;
+  }
+}
 
 .benefits__item {
   flex: 1;
   margin: 0 3%;
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  .benefits__item {
+    display: flex;
+    margin: 0 0 31px 0;
+    align-items: center;
+  }
 }
 .benefits__item::before {
   content: url("../../img/icons/benefot-sep.png");
@@ -367,6 +397,11 @@ img {
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 480px) {
+  .benefit__image-wrapper {
+    margin-bottom: 0;
+  }
+}
 
 .benefit__icon {
   width: 3.75rem;
@@ -378,15 +413,34 @@ img {
 }
 
 .benefit__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 27.77px;
   text-align: center;
   color: #292929;
 }
+@media screen and (max-width: 480px) {
+  .benefit__title {
+    margin-bottom: 6px;
+    text-align: left;
+  }
+}
 
 .benefit__desc {
   padding: 0 0.5625rem;
+}
+@media screen and (max-width: 480px) {
+  .benefit__desc {
+    padding: 0;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefit__text {
+    text-align: left;
+    margin-left: 12px;
+  }
 }
 
 .reviews-section {
@@ -407,6 +461,11 @@ img {
   background: #F8FAF9;
   padding: 2.625rem;
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  .reviews__display {
+    padding: 56px 20px 23px;
+  }
 }
 .reviews__display::before {
   position: absolute;
