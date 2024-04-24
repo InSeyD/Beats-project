@@ -29,7 +29,12 @@
         align-items: center;
 
         &::before {
-            content: url('../../img/hero-bg.png');
+            //content: url('../../img/hero-bg.png');
+            content: '';
+            background: url('../../img/hero-bg.png');
+            width: 323px;
+            height: 323px;
+            background-size: cover;
         }
     }
 }
