@@ -1,6 +1,8 @@
 .order-section {
     background: url(../../img/order-bg.png) center center no-repeat;
     color: #FFFFFF;
+    background-size: cover;
+    
 
     &__title {
         color: #FFFFFF;
@@ -10,11 +12,20 @@
 
 .form {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 18%;
+    }
 }
 
 .form__col {
     flex: 1;
     margin-right: 26px;
+
+    @include tablets {
+        margin-right: 0;
+    }
 
     &:last-child {
         margin-right: 0;
@@ -27,8 +38,8 @@
 
 .form__block {
     flex: 1;
-    margin-right: 14px;
-    margin-top: 14px;
+    margin-right: 0.875rem;
+    margin-top: 0.875rem;
 
     &:last-child {
         margin-right: 0;
@@ -44,10 +55,18 @@
     padding: 1.125rem 0.75rem;
     border: solid 3px transparent;
 
+    @include tablets {
+        height: 2.25rem;
+    }
+
     &--textarea {
         height: 9.5rem;
         resize: none;
         margin-bottom: 2.25rem;
+
+        @include tablets {
+            height: 5.125rem;
+        }
     }
 
     &:focus {
@@ -64,4 +83,8 @@
 .form__btns {
     display: flex;
     margin-top: 2.75rem;
+
+    @include tablets {
+        justify-content: center;
+    }
 }
