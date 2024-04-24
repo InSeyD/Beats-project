@@ -11,6 +11,9 @@
 }
 
 .menu {
+    margin: 0 30px;
+    padding-top: 5px;
+
     @include tablets {
         display: none;
     }
@@ -21,12 +24,13 @@
     align-items: center;
     font-size: 1.125rem;
     font-family: 'Alegreya Sans';
-    width: 39.9375rem;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .menu__item {
     margin-right: 0.9375rem;
+    margin-bottom: 10px;
 
     &:last-child {
         margin-right: 0;
@@ -38,6 +42,7 @@
 }
 
 .phone-number {
+    min-width: 152px;
     font-size: 18px;
     text-decoration: none;
     display: flex;

@@ -20,11 +20,16 @@
     margin: 0 3%;
     position: relative;
 
+
     &::before {
         content: url('../../img/icons/benefot-sep.png');
         position: absolute;
         top: 1.875rem;
         right: -3.8125rem;
+
+        @include tablets {
+            display: none;
+        }
     }
 
     &:first-child {

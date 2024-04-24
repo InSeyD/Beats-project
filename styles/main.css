@@ -179,6 +179,10 @@ img {
   }
 }
 
+.menu {
+  margin: 0 30px;
+  padding-top: 5px;
+}
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
@@ -190,12 +194,13 @@ img {
   align-items: center;
   font-size: 1.125rem;
   font-family: "Alegreya Sans";
-  width: 39.9375rem;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu__item {
   margin-right: 0.9375rem;
+  margin-bottom: 10px;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -206,6 +211,7 @@ img {
 }
 
 .phone-number {
+  min-width: 152px;
   font-size: 18px;
   text-decoration: none;
   display: flex;
@@ -332,6 +338,11 @@ img {
   top: 1.875rem;
   right: -3.8125rem;
 }
+@media screen and (max-width: 768px) {
+  .benefits__item::before {
+    display: none;
+  }
+}
 .benefits__item:first-child {
   margin-left: 0;
 }
@@ -407,14 +418,33 @@ img {
   border-radius: 50%;
   top: -3.5rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews__display::before {
+    left: 43%;
+  }
+}
 
 .reviews__display-inner {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .reviews__display-inner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews__avatar {
   width: 15.8125rem;
   height: 16.5rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__avatar {
+    width: 8.125rem;
+    height: 8.125rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .reviews__avatar-img {
@@ -428,14 +458,23 @@ img {
   flex: 1;
   margin-left: 2.5rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    margin-left: 0;
+  }
+}
 
 .reviews__title {
   font-size: 24px;
   font-weight: 700;
   line-height: 27.77px;
-  text-align: left;
   color: #292929;
   margin-bottom: 1.6875rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__title {
+    margin-bottom: 1rem;
+  }
 }
 
 .reviews__text {
@@ -443,13 +482,18 @@ img {
   margin-bottom: 2.375rem;
   padding-right: 6.75rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews__text {
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+}
 
 .reviews__author {
   color: #292929;
   font-size: 18px;
   font-weight: 700;
   line-height: 20.83px;
-  text-align: left;
 }
 
 .reviews__switcher {
