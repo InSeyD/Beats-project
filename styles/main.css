@@ -609,6 +609,11 @@ img {
     padding: 0 18%;
   }
 }
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 0;
+  }
+}
 
 .form__col {
   flex: 1;
@@ -668,6 +673,11 @@ img {
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .form__controls {
+    justify-content: center;
+  }
 }
 
 .form__btns {
