@@ -226,10 +226,15 @@ img {
   align-items: center;
 }
 
-.phone-number__icon-elem {
-  width: 0.875rem;
-  height: 0.875rem;
-  margin-right: 0.375rem;
+.phone-number__icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  fill: red;
+}
+
+#phone {
+  fill: red;
 }
 
 .features {
@@ -798,4 +803,27 @@ img {
   background: #292929;
   height: 4px;
   border-radius: 10px;
+}
+
+.contacts-section {
+  background: url("../../img/map.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.footer {
+  background: #FFFFFF;
+  position: absolute;
+  bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer_phone-number.phone-number {
+    display: flex;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer_phone-number.phone-number {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */

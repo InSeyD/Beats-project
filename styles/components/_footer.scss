@@ -1,0 +1,23 @@
+.contacts-section {
+    background: url('../../img/map.png')center center no-repeat ;
+    background-size: cover;
+    position: relative;
+}
+
+.footer {
+    background: #FFFFFF;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer_phone-number.phone-number {
+
+    @include tablets {
+        display: flex;
+    }
+
+    @include phones {
+        display: flex;
+    }
+}
+
