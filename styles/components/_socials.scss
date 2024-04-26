@@ -1,0 +1,85 @@
+.socials__list {
+    display: flex;
+}
+
+.socials__item {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.socials__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../../img/icons/socials-sprite.png) -10px -60px;
+        transition: .3s;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../../img/icons/socials-sprite.png) -60px -10px;
+        opacity: 0;
+        transition: .3s;
+    }
+
+    &--fb {
+        &::after {
+            background: url(../../img/icons/socials-sprite.png) -110px -10px;
+        }
+        &::before {
+            background: url(../../img/icons/socials-sprite.png) -60px -60px;
+        }
+    }
+
+    &--in {
+        &::after {
+            background: url(../../img/icons/socials-sprite.png) -10px -110px;
+        }
+        &::before {
+            background: url(../../img/icons/socials-sprite.png) -110px -60px;
+        }
+    }
+
+    &--tg {
+        &::after {
+            background: url(../../img/icons/socials-sprite.png) -10px -10px;
+        }
+        &::before {
+            background: url(../../img/icons/socials-sprite.png) -60px -110px;
+        }
+    }
+}
+
+.socials__link:hover::after {
+    opacity: 0;
+    }
+
+.socials__link:hover::before {
+    opacity: 1;
+    }
+
+

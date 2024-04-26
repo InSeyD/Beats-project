@@ -230,11 +230,6 @@ img {
   width: 14px;
   height: 14px;
   margin-right: 6px;
-  fill: red;
-}
-
-#phone {
-  fill: red;
 }
 
 .features {
@@ -811,19 +806,125 @@ img {
   position: relative;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
 .footer {
   background: #FFFFFF;
   position: absolute;
   bottom: 0px;
 }
+@media screen and (max-width: 480px) {
+  .footer {
+    height: 151px;
+  }
+}
+
+.footer__contacts-address {
+  font-size: 18px;
+  margin-bottom: 3px;
+  color: #292929;
+}
+@media screen and (max-width: 480px) {
+  .footer__contacts-address {
+    margin-bottom: 12px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .footer_phone-number.phone-number {
+    color: #E01F3D;
     display: flex;
+    fill: red;
   }
 }
 @media screen and (max-width: 480px) {
   .footer_phone-number.phone-number {
+    color: #292929;
     display: flex;
+    fill: #292929;
+    flex-direction: column;
+    margin-bottom: 19px;
   }
+}
+
+.socials__list {
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 10px;
+}
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+}
+.socials__link::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../../img/icons/socials-sprite.png) -10px -60px;
+  transition: 0.3s;
+}
+.socials__link::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../../img/icons/socials-sprite.png) -60px -10px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.socials__link--fb::after {
+  background: url(../../img/icons/socials-sprite.png) -110px -10px;
+}
+.socials__link--fb::before {
+  background: url(../../img/icons/socials-sprite.png) -60px -60px;
+}
+.socials__link--in::after {
+  background: url(../../img/icons/socials-sprite.png) -10px -110px;
+}
+.socials__link--in::before {
+  background: url(../../img/icons/socials-sprite.png) -110px -60px;
+}
+.socials__link--tg::after {
+  background: url(../../img/icons/socials-sprite.png) -10px -10px;
+}
+.socials__link--tg::before {
+  background: url(../../img/icons/socials-sprite.png) -60px -110px;
+}
+
+.socials__link:hover::after {
+  opacity: 0;
+}
+
+.socials__link:hover::before {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

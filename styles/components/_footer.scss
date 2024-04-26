@@ -4,20 +4,51 @@
     position: relative;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
 .footer {
     background: #FFFFFF;
     position: absolute;
     bottom: 0px;
+
+    @include phones {
+        height: 151px;
+    }
+
+}.footer__contacts-address {
+    font-size: 18px;
+    margin-bottom: 3px;
+    color: $black;
+
+    @include phones {
+        margin-bottom: 12px;
+    }
 }
 
 .footer_phone-number.phone-number {
 
     @include tablets {
+        color:#E01F3D;
         display: flex;
+        fill: red;
     }
 
     @include phones {
+        color: $black;
         display: flex;
+        fill: $black;
+        flex-direction: column;
+        margin-bottom: 19px;
     }
 }
+
 
