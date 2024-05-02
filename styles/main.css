@@ -981,12 +981,42 @@ img {
   width: 27px;
   height: 27px;
 }
+@media screen and (max-width: 768px) {
+  .slider__btn {
+    top: -131px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__btn {
+    top: -185px;
+  }
+}
 .slider__btn--left {
   transform: rotate(-45deg);
   left: -28px;
 }
+@media screen and (max-width: 768px) {
+  .slider__btn--left {
+    left: 101px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__btn--left {
+    left: 2px;
+  }
+}
 .slider__btn--right {
   transform: rotate(-225deg);
+}
+@media screen and (max-width: 768px) {
+  .slider__btn--right {
+    right: 95px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__btn--right {
+    right: 2px;
+  }
 }
 .slider__btn::after {
   position: absolute;
@@ -1003,13 +1033,33 @@ img {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .slider__item {
+    flex-direction: column;
+  }
+}
 
 .slider__img-wrapper {
   margin-right: 59px;
 }
+@media screen and (max-width: 768px) {
+  .slider__img-wrapper {
+    margin-right: 0;
+    margin-bottom: 49px;
+    width: 306px;
+    height: 306px;
+  }
+}
 
 .slider__content {
   flex: 1;
+}
+@media screen and (max-width: 768px) {
+  .slider__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .slider__info {
@@ -1019,6 +1069,11 @@ img {
   border-radius: 4px;
   position: relative;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+  .slider__info {
+    display: none;
+  }
 }
 .slider__info-icon {
   position: absolute;
@@ -1037,13 +1092,32 @@ img {
   margin-bottom: 24px;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .slider__title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
 
 .slider__text {
   width: 89%;
 }
+@media screen and (max-width: 768px) {
+  .slider__text {
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .slider__desc {
   margin-bottom: 24px;
+}
+@media screen and (max-width: 768px) {
+  .slider__desc {
+    text-align: center;
+  }
 }
 
 .slider__characteristics {
