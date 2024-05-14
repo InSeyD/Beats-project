@@ -109,15 +109,50 @@
    position: relative;
    margin-bottom: 25px;
 
+   &:hover .slider__info-list {
+    display: flex;
+   }
+
    @include tablets {
     display: none;
    }
    
-   &-icon {
+   &-img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+   }
+
+   &-list {
+    position: absolute;
+    left: 91px;
+    background: #FFFFFFCC;
+    color: black;
+    height: 294px;
+    width: 273px;
+    //display: flex;
+    padding: 28px 25px 34px 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 4px 4px 40px 0px #0000000F;
+    display: none;
+   }
+
+   &-item {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    justify-content: space-between;
+   }
+
+   &-icon-wrapper {
+    display: flex;
+    align-items: center;
+   }
+
+   &-icon {
+    margin-right: 16px;
    }
 }
 
