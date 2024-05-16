@@ -296,7 +296,7 @@ img {
   line-height: 3.25rem;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 1.125rem;
+  margin-bottom: 18px;
   z-index: 1;
   color: #292929;
   position: relative;
@@ -1194,4 +1194,44 @@ img {
   font-size: 36px;
   line-height: 60px;
   color: #292929;
+}
+
+.team__list {
+  display: flex;
+  margin-top: 35px;
+}
+
+.team__item {
+  margin-right: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team__icon {
+  margin-bottom: 25px;
+}
+
+.team__item-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #292929;
+}
+.team__item-name-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.team__item-trine {
+  border: 6px solid transparent;
+  border-bottom-color: red;
+  margin-left: 5px;
+}
+
+.team__item-text {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
