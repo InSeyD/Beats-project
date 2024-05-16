@@ -13,7 +13,7 @@
     }
 }
 
-.reviews__display {
+.reviews__list {
     background: $gray;
     padding: 2.625rem;
     position: relative;
@@ -38,7 +38,7 @@
     }
 }
 
-.reviews__display-inner {
+.reviews__item {
     display: flex;
 
     @include tablets {
@@ -47,6 +47,7 @@
         align-items: center;
     }
 }
+
 
 .reviews__avatar {
     width: 15.8125rem;
@@ -108,4 +109,12 @@
     display: flex;
     justify-content: center;
     margin-top: 0.9375rem;
+}
+
+#review-2 {
+    display: none;
+}
+
+#review-3 {
+    display: none;
 }

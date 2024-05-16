@@ -217,10 +217,24 @@
                 <div class="container">
                     <h2 class="section__title">Отзывы</h2>
                     <div class="reviews">
-                        <div class="reviews__display">
-                            <div class="reviews__display-inner">
+                        <ul class="reviews__list">
+                            <li class="reviews__item" id="review-1">
                                 <div class="reviews__avatar">
                                     <img src="./img/content/reviews-1.png" alt="Фото" class="reviews__avatar-img">
+                                </div>
+                                <article class="reviews__content">
+                                    <h3 class="reviews__title">Крутой дизайн</h3>
+                                    <div class="reviews__text">
+                                        <p>
+                                            После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт. 
+                                        </p>
+                                    </div>
+                                    <div class="reviews__author">Вадим Грачев</div>
+                                </article>
+                            </li>
+                            <li class="reviews__item" id="review-2">
+                                <div class="reviews__avatar">
+                                    <img src="./img/content/reviews-2.png" alt="Фото" class="reviews__avatar-img">
                                 </div>
                                 <article class="reviews__content">
                                     <h3 class="reviews__title">Отличный звук</h3>
@@ -231,23 +245,37 @@
                                     </div>
                                     <div class="reviews__author">Билли Айлиш</div>
                                 </article>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="reviews__item" id="review-3">
+                                <div class="reviews__avatar">
+                                    <img src="./img/content/reviews-3.png" alt="Фото" class="reviews__avatar-img">
+                                </div>
+                                <article class="reviews__content">
+                                    <h3 class="reviews__title">На долго хватает заряда</h3>
+                                    <div class="reviews__text">
+                                        <p>
+                                            Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. 
+                                        </p>
+                                    </div>
+                                    <div class="reviews__author">Мария Орлова</div>
+                                </article>
+                            </li>
+                        </ul>
                         <ul class="reviews__switcher">
-                            <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                                <a href="#" class="interactive-avatar__link">
+                            <li class="reviews__switcher-item interactive-avatar interactive-avatar--active" id="avatar-1">
+                                <div class="interactive-avatar__link">
                                     <img src="./img/content/reviews-1.png" alt="Фото" class="interactive-avatar__img">
-                                </a>
+                                </div>
                             </li>
-                            <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
+                            <li class="reviews__switcher-item interactive-avatar" id="avatar-2">
+                                <div class="interactive-avatar__link">
                                     <img src="./img/content/reviews-2.png" alt="Фото" class="interactive-avatar__img">
-                                </a>
+                                </div>
                             </li>
-                            <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
+                            <li class="reviews__switcher-item interactive-avatar" id="avatar-3">
+                                <div class="interactive-avatar__link">
                                     <img src="./img/content/reviews-3.png" alt="Фото" class="interactive-avatar__img">
-                                </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -394,6 +422,7 @@
             </svg>
         </nav>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/js.js"></script>
 </body>
 </html>
