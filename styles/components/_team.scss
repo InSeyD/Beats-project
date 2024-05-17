@@ -1,6 +1,7 @@
 .team__list {
     display: flex;
     margin-top: 35px;
+    user-select: none;
 }
 
 .team__item {
@@ -19,6 +20,10 @@
     margin-bottom: 25px;
 }
 
+.team__info {
+    position: relative;
+}
+
 .team__item-name {
     font-size: 18px;
     font-weight: 700;
@@ -27,6 +32,8 @@
     &-wrapper {
         display: flex;
         align-items: flex-start;
+        justify-content: center;
+        user-select: none;
     }
 }
 
@@ -34,8 +41,29 @@
     border: 6px solid transparent;
     border-bottom-color: red;
     margin-left: 5px;
+
+    &--rotate {
+        border-bottom-color: transparent;
+        border-top-color: red;
+        align-self: center;
+    }
 }
 
 .team__item-text {
-    display: none;  
+    display: none;
+    //display: flex;
+    flex-direction: column;
+    max-width: 220px;
+    position: absolute;
+    left: -4px;
+    
+    &--display {
+        display: flex;
+    }
+}
+
+.team__item-text-1 {
+    color: $black;
+    margin-top: 11px;
+    margin-bottom: 4px;
 }

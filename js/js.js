@@ -52,3 +52,40 @@ avatarThree.addEventListener('click', function(){
     avatarThree.classList.add('interactive-avatar--active');
 })
 
+
+//team
+
+const trineOne = document.querySelector("#trine-1");
+const trineTwo = document.querySelector("#trine-2");
+const trineThree = document.querySelector("#trine-3");
+const trineFour = document.querySelector("#trine-4");
+
+const trineOneR = document.querySelector('#trine-1-1');
+const trineTwoR = document.querySelector('#trine-2-1');
+const trineThreeR = document.querySelector('#trine-3-1');
+const trineFourR = document.querySelector('#trine-4-1');
+
+const teamTextOne = document.querySelector("#team-text-1");
+const teamTextTwo = document.querySelector("#team-text-2");
+const teamTextThree = document.querySelector("#team-text-3");
+const teamTextFour = document.querySelector("#team-text-4");
+
+trineOne.addEventListener('click', function(){
+    teamTextOne.classList.toggle('team__item-text--display');
+    trineOneR.classList.toggle('team__item-trine--rotate');
+})
+
+trineTwo.addEventListener('click', function(){
+    teamTextTwo.classList.toggle('team__item-text--display');
+    trineTwoR.classList.toggle('team__item-trine--rotate');
+})
+
+trineThree.addEventListener('click', function(){
+    teamTextThree.classList.toggle('team__item-text--display');
+    trineThreeR.classList.toggle('team__item-trine--rotate');
+})
+
+trineFour.addEventListener('click', function(){
+    teamTextFour.classList.toggle('team__item-text--display');
+    trineFourR.classList.toggle('team__item-trine--rotate');
+})
