@@ -70,22 +70,31 @@ const teamTextTwo = document.querySelector("#team-text-2");
 const teamTextThree = document.querySelector("#team-text-3");
 const teamTextFour = document.querySelector("#team-text-4");
 
+const teamIconOne = document.querySelector("#team__icon-1");
+const teamIconTwo = document.querySelector("#team__icon-2");
+const teamIconThree = document.querySelector("#team__icon-3");
+const teamIconFour = document.querySelector("#team__icon-4");
+
 trineOne.addEventListener('click', function(){
     teamTextOne.classList.toggle('team__item-text--display');
     trineOneR.classList.toggle('team__item-trine--rotate');
+    teamIconOne.classList.toggle('team__icon--tablets');
 })
 
 trineTwo.addEventListener('click', function(){
     teamTextTwo.classList.toggle('team__item-text--display');
     trineTwoR.classList.toggle('team__item-trine--rotate');
+    teamIconTwo.classList.toggle('team__icon--tablets');
 })
 
 trineThree.addEventListener('click', function(){
     teamTextThree.classList.toggle('team__item-text--display');
     trineThreeR.classList.toggle('team__item-trine--rotate');
+    teamIconThree.classList.toggle('team__icon--tablets');
 })
 
 trineFour.addEventListener('click', function(){
     teamTextFour.classList.toggle('team__item-text--display');
     trineFourR.classList.toggle('team__item-trine--rotate');
+    teamIconFour.classList.toggle('team__icon--tablets');
 })
