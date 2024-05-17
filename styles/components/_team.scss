@@ -83,8 +83,10 @@
     @include tablets {
         position: static;
         order: -1;
-
+        align-items: center;
     }
+
+    
     
     &--display {
         display: flex;
@@ -103,5 +105,11 @@
     @include tablets {
         font-size: 18px;
         font-weight: 700;
+    }
+}
+
+.team__item-text-2 {
+    @include phones {
+        width: 329px;
     }
 }

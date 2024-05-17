@@ -1282,6 +1282,7 @@ img {
   .team__item-text {
     position: static;
     order: -1;
+    align-items: center;
   }
 }
 .team__item-text--display {
@@ -1301,5 +1302,11 @@ img {
   .team__item-text-1 {
     font-size: 18px;
     font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team__item-text-2 {
+    width: 329px;
   }
 }/*# sourceMappingURL=main.css.map */
