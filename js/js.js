@@ -53,7 +53,7 @@ avatarThree.addEventListener('click', function(){
 })
 
 
-//team
+//team________________________________________________________
 
 const trineOne = document.querySelector("#trine-1");
 const trineTwo = document.querySelector("#trine-2");
@@ -98,3 +98,24 @@ trineFour.addEventListener('click', function(){
     trineFourR.classList.toggle('team__item-trine--rotate');
     teamIconFour.classList.toggle('team__icon--tablets');
 })
+
+
+//slider__________________________________________________
+
+
+const slideOne = document.querySelector('.slider__item--1');
+const slideTwo = document.querySelector('.slider__item--2');
+const sliderBtnL = document.querySelector('.slider__btn--left');
+const sliderBtnR = document.querySelector('.slider__btn--right');
+
+sliderBtnL.addEventListener('click', function(){
+    slideOne.classList.toggle('slider__item-swap-1');
+    slideTwo.classList.toggle('slider__item-swap-2');
+})
+
+sliderBtnR.addEventListener('click', function(){
+    slideOne.classList.toggle('slider__item-swap-1');
+    slideTwo.classList.toggle('slider__item-swap-2');
+})
+
+

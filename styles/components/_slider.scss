@@ -25,6 +25,7 @@
     display: block;
     width: 27px;
     height: 27px;
+    cursor: pointer;
     
     @include tablets {
         top: -131px;
@@ -229,4 +230,32 @@
     font-size: 36px;
     line-height: 60px;
     color: $black;
+}
+
+.slider__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider__item--1 {
+    transform: translate(0%,45%);
+    transition: transform 2s;
+}
+
+.slider__item-swap-1 {
+    transform: translate(-100%, 45%);
+    transition: transform 2s;
+}
+
+.slider__item--2 {
+    transform: translate(100%, -55%);
+    transition: transform 2s;
+}
+
+.slider__item-swap-2 {
+    transform: translate(0%, -55%);
+    transition: transform 2s;
 }
