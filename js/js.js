@@ -105,6 +105,7 @@ trineFour.addEventListener('click', function(){
 
 const slideOne = document.querySelector('.slider__item--1');
 const slideTwo = document.querySelector('.slider__item--2');
+
 const sliderBtnL = document.querySelector('.slider__btn--left');
 const sliderBtnR = document.querySelector('.slider__btn--right');
 
@@ -117,5 +118,27 @@ sliderBtnR.addEventListener('click', function(){
     slideOne.classList.toggle('slider__item-swap-1');
     slideTwo.classList.toggle('slider__item-swap-2');
 })
+
+
+//colors slider______________________________________________________
+
+
+const colorSlideOne = document.querySelector('.colors__item-title--silver');
+const colorSlideTwo = document.querySelector('.colors__item-title--black');
+const colorSlideThree = document.querySelector('.colors__item-title--red');
+
+const colorTextOne = document.querySelector('.colors__item-text--1');
+const colorTextTwo = document.querySelector('.colors__item-text--2');
+const colorTextThree = document.querySelector('.colors__item-text--3');
+
+const colorTitleOne = document.querySelector('.colors__title--1');
+const colorTitleTwo = document.querySelector('.colors__title--2');
+
+colorSlideOne.addEventListener('click', function(){
+    colorTextOne.classList.toggle('colors__item-text--display');
+    colorTitleOne.classList.toggle('colors__title--1--display');
+    colorTitleTwo.classList.toggle('colors__title--2--display');
+})
+
 
 
