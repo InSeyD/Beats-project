@@ -122,10 +122,17 @@ sliderBtnR.addEventListener('click', function(){
 
 //colors slider______________________________________________________
 
+const colorItemOne = document.querySelector('.colors__item--1');
+const colorItemTwo = document.querySelector('.colors__item--2');
+const colorItemThree = document.querySelector('.colors__item--3');
 
 const colorSlideOne = document.querySelector('.colors__item-title--silver');
 const colorSlideTwo = document.querySelector('.colors__item-title--black');
 const colorSlideThree = document.querySelector('.colors__item-title--red');
+
+const colorTextOpacityOne = document.querySelector('.colors__item-text--opacity--1');
+const colorTextOpacityTwo = document.querySelector('.colors__item-text--opacity--2');
+const colorTextOpacityThree = document.querySelector('.colors__item-text--opacity--3');
 
 const colorTextOne = document.querySelector('.colors__item-text--1');
 const colorTextTwo = document.querySelector('.colors__item-text--2');
@@ -135,9 +142,62 @@ const colorTitleOne = document.querySelector('.colors__title--1');
 const colorTitleTwo = document.querySelector('.colors__title--2');
 
 colorSlideOne.addEventListener('click', function(){
+    colorSlideOne.classList.toggle('colors__item-title--silver--display');
     colorTextOne.classList.toggle('colors__item-text--display');
     colorTitleOne.classList.toggle('colors__title--1--display');
     colorTitleTwo.classList.toggle('colors__title--2--display');
+    colorTextOpacityOne.classList.toggle('colors__item-text--opacity--display--1');
+
+    colorSlideTwo.classList.remove('colors__item-title--black--display')
+    colorTextTwo.classList.remove('colors__item-text--display');
+    colorItemOne.classList.remove('colors__item--1--left');
+    colorTextOpacityTwo.classList.remove('colors__item-text--opacity--display--2');
+
+    colorSlideThree.classList.remove('colors__item-title--red--display');
+    colorTextThree.classList.remove('colors__item-text--display');
+    colorTextOpacityThree.classList.remove('colors__item-text--opacity--display--3');
+    colorTextOpacityThree.classList.remove('colors__item-text--opacity--display--2');
+    colorItemOne.classList.remove('colors__item--1--left');
+    colorItemTwo.classList.remove('colors__item--2--left');
+    
+})
+
+colorSlideTwo.addEventListener('click', function(){
+    colorSlideTwo.classList.toggle('colors__item-title--black--display');
+    colorTextTwo.classList.toggle('colors__item-text--display');
+    colorTitleOne.classList.toggle('colors__title--1--display');
+    colorTitleTwo.classList.toggle('colors__title--2--display');
+    colorTextOpacityTwo.classList.toggle('colors__item-text--opacity--display--2');
+    colorItemOne.classList.toggle('colors__item--1--left');
+
+    colorSlideOne.classList.remove('colors__item-title--silver--display');
+    colorTextOne.classList.remove('colors__item-text--display');
+    colorSlideThree.classList.remove('colors__item-title--red--display');
+    colorTextThree.classList.remove('colors__item-text--display');
+
+    colorTextOpacityOne.classList.remove('colors__item-text--opacity--display--1');
+    colorTextOpacityThree.classList.remove('colors__item-text--opacity--display--2');
+})
+
+colorSlideThree.addEventListener('click', function(){
+    colorSlideThree.classList.toggle('colors__item-title--red--display');
+    colorTextThree.classList.toggle('colors__item-text--display');
+    colorTitleOne.classList.toggle('colors__title--1--display');
+    colorTitleTwo.classList.toggle('colors__title--2--display');
+    colorTextOpacityThree.classList.toggle('colors__item-text--opacity--display--3');
+    colorItemOne.classList.toggle('colors__item--1--left');
+    colorItemTwo.classList.toggle('colors__item--2--left');
+
+    colorTextOpacityTwo.classList.remove('colors__item-text--opacity--display--2');
+    colorTextOpacityOne.classList.remove('colors__item-text--opacity--display--1');
+
+    colorSlideOne.classList.remove('colors__item-title--silver--display');
+    colorTextOne.classList.remove('colors__item-text--display');
+    colorSlideTwo.classList.remove('colors__item-title--black--display');
+    colorTextTwo.classList.remove('colors__item-text--display');
+
+    
+
 })
 
 
