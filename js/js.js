@@ -144,8 +144,8 @@ const colorTitleTwo = document.querySelector('.colors__title--2');
 colorSlideOne.addEventListener('click', function(){
     colorSlideOne.classList.toggle('colors__item-title--silver--display');
     colorTextOne.classList.toggle('colors__item-text--display');
-    colorTitleOne.classList.toggle('colors__title--1--display');
-    colorTitleTwo.classList.toggle('colors__title--2--display');
+    //colorTitleOne.classList.toggle('colors__title--1--display');
+    //colorTitleTwo.classList.toggle('colors__title--2--display');
     colorTextOpacityOne.classList.toggle('colors__item-text--opacity--display--1');
 
     colorSlideTwo.classList.remove('colors__item-title--black--display')
@@ -195,10 +195,26 @@ colorSlideThree.addEventListener('click', function(){
     colorTextOne.classList.remove('colors__item-text--display');
     colorSlideTwo.classList.remove('colors__item-title--black--display');
     colorTextTwo.classList.remove('colors__item-text--display');
-
-    
-
 })
+
+//const slideOneActive = document.querySelector('.colors__item-title--silver--display');
+//const slideTwoActive = document.querySelector('.colors__item-title--black--display');
+//const slideThreeActive = document.querySelector('.colors__item-title--red--display');
+
+const colorSlideOneId = document.querySelector('#colors__item-title--silver');
+const colorSlideTwoId = document.querySelector('#colors__item-title--black');
+const colorSlideThreeId = document.querySelector('#colors__item-title--red');
+
+
+const slideActiveOne = colorSlideOneId.classList.contains('.colors__item-title--silver--display');
+const slideActiveTwo = colorSlideTwoId.classList.contains('.colors__item-title--black--display');
+const slideActiveThree = colorSlideThreeId.classList.contains('.colors__item-title--red--display');
+
+const massivSlide = slideActiveOne || slideActiveTwo || slideActiveThree;
+console.log(massivSlide);
+
+
+
 
 
 
